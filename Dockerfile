@@ -30,7 +30,7 @@ ENV LTB_PROJECT_VERSION 1.0
 ENV LTB_PROJECT_SHA256 2666e164f12f3e2f2bd08d7c580ac17d1474ec503e66d8025e0ffeeb4a1eab7e
 
 # Download ltb-project self-service password
-RUN curl -s -L -o self-service-password.tar.gz https://github.com/ltb-project/self-service-password/archive/v1.0.tar.gz && \
+RUN curl -s -L -o self-service-password.tar.gz https://github.com/ltb-project/self-service-password/archive/v1.3.tar.gz && \
     echo "${LTB_PROJECT_SHA256}  self-service-password.tar.gz" | sha256sum -c '-'
 
 # Install ltb-project
