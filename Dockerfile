@@ -36,5 +36,5 @@ RUN mkdir -p /var/www/html && \
 
 # add default config file
 COPY assets/config.inc.php /var/www/html/conf/config.inc.php
-
+VOLUME ["/var/www/html/conf/"]
 CMD ["/usr/bin/supervisord", "-c", "/etc/supervisor/conf.d/supervisord.conf"]
